@@ -1,0 +1,469 @@
+:root {
+  --bg-color: #4ea0d6;
+  --text-color: #333333;
+  --card-bg: #f8f9fa;
+  --border-color: #e0e0e0;
+  --accent-color: #007bff;
+  --shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  --them-color: #4dabf7;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --card-bg: #2d2d2d;
+  --border-color: #444444;
+  --accent-color: #4dabf7;
+  --shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+  --them-color: #2350e2dc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color) !important;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  line-height: 1.6;
+}
+
+.pc {
+  display: none;
+  visibility: hidden;
+}
+
+.tablet {
+  display: none;
+  visibility: hidden;
+}
+
+.movil {
+  display: block;
+  visibility: visible;
+}
+
+.cv_container {
+  width: 100%;
+  max-width: 550px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--bg-color);
+  border-right: 0px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.sidebar {
+  padding: 20px;
+  height: 100%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-right: 0px solid var(--border-color);
+}
+
+.side{
+  padding: 10px;
+  margin: 0px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: var(--card-bg);
+  color: var(--text-color);
+  box-shadow: 0 0 0 0 #000;
+}
+
+.portada {
+  width: 200px;
+  height: 200px;
+  align-items: center;
+}
+
+.controls{
+  align-items: center;
+  margin-bottom: -40px;
+  position: relative;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border: 5px solid var(--border-color);
+  border-radius: 50%;
+  margin-top: -100px;
+  margin-bottom: 1rem;
+}
+
+.space{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid var(--them-color);
+  border-radius: 10px;
+  height: 1px;
+}
+
+.contact-info {
+  padding: 0px;
+  padding-left: 0px;
+}
+
+.contact-item{
+  margin: 10px;
+}
+
+.contact-item > i{
+  font-size: 25PX;
+  width: 40px;
+  height: 40px;
+  color: var(--them-color);
+  text-align: center;
+  padding-top: 10px;
+  background-color: var(--shadow);
+  border-radius: 20%;
+  display: inline-block;
+}
+
+.contact-item > a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.line{
+  padding-top: 10px;
+}
+
+.lines{
+  margin-top: -5px !important;
+}
+
+.contact-item > span{
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 10px;
+}
+
+.social-icons>a {
+  font-size: 30px;
+  float: left;
+  padding: 10px;
+  color: var(--them-color);
+}
+
+.main-content {
+  height: 100%;
+  border: 0px solid var(--border-color);
+  padding: 20px;
+  display: none;
+  visibility: hidden;
+}
+
+.main {
+  background: var(--card-bg);
+  margin-top: 0rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.header {
+  color: var(--text-color);
+}
+
+.main-title {
+  padding: 10px !important;
+  padding-left: 20px !important;
+  color: var(--text-color);
+}
+
+.nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-left: -20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 0px 20px;
+  border: 0px solid #000 !important;
+}
+
+.nav-item {
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    background-color: transparent;
+    border: 0px solid #fff !important;
+    color: var(--text-color) !important;
+    font-size: 1rem;
+    font-weight: 600 !important;
+    transition: all 0.3s ease;
+}
+
+.nav-link.active {
+    color: var(--them-color) !important;
+    background-color: transparent !important;
+    border: 0px solid #fff !important;
+}
+
+.nav-link:active {
+    color: var(--them-color) !important;
+    background-color: transparent !important;
+    border: 0px solid #fff !important;
+}
+
+.tab-pane {
+  padding: 20px;
+  padding-top: 0px !important;
+}
+
+.section-title {
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.list-schools{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-schools > li{
+  border-left: var(--them-color) 5px solid;
+  padding: 10px;
+  padding-top: 2px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+}
+.item-title {
+  font-weight: 600;
+}
+
+.img-title{
+  width: 170px;
+  height: 115px;
+  border: 5px solid;
+  border-image: linear-gradient(
+            to top, 
+            black, 
+            var(--them-color)
+            ) 1 100%;
+  box-shadow: var(--shadow);
+}
+
+.img-title:hover{
+  width: 180px;
+  height: 120px;
+  transition: all 0.3s ease;
+  margin-top:-5px;
+  margin-left:-5px;
+}
+
+.certificacion-modal {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.certification-item {
+  background: var(--card-bg);
+  border : 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+}
+
+.certification-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.back {
+  position: relative;
+}
+
+.front{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  opacity: 0;
+}
+
+.front:hover{
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.certification-info {
+  border : 1px solid var(--border-color);
+  background: var(--card-bg);
+  color: var(--text-color);
+  height: 90px;
+}
+
+.certification-info>p{
+  font-weight: 600;
+}
+
+.certification-info>p>img{
+  float:left;
+  border-radius: 50%;
+  align-items: center;
+  margin: 10px;
+  margin-top: 15px;
+  width: 50px;
+  height: 50px;
+}
+
+.info-text {
+  font-weight: 600;
+  margin-top: -5px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+
+.hero {
+  padding: 4rem 0;
+  background: var(--card-bg);
+  margin: 3rem 0;
+  margin-top: 0rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+
+
+
+.footer {
+    background: var(--card-bg);
+    color: var(--text-color);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 0rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.hidden {
+  display: none;
+}
+
+.modal{
+  transition: all 0.3s ease;
+}
+
+.modal-xl{
+    width: 1000px !important;
+    margin-left: -100px;
+}
+
+.image-display {
+    background: var(--card-bg) !important;
+    color: var(--text-color) !important;
+    border-radius: 0px !important;
+}
+
+.info-title>i {
+  font-weight: 600;
+  color: var(--text-color);
+  width: 30px;
+}
+
+.info-title>p {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.institution {
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.btn-cv{
+  border-radius: 10px;
+  border: 3px solid var(--border-color) !important;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2) !important;
+  background-color: var(--them-color) !important;
+  color: #fff !important;
+  text-decoration: none;
+  max-width: 170px !important;
+  max-height: 50px !important;
+  font-weight: 700 !important;
+  padding: 5px;
+  margin-bottom: 1rem !important;
+  margin-top: 1rem !important;
+}

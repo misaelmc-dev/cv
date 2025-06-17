@@ -1,0 +1,16 @@
+<script>
+// Cargar preferencias guardadas al iniciar
+function loadPreferences() {
+
+    // Cargar idioma guardado
+    const savedLang = localStorage.getItem('language');
+        if (savedLang === 'en') {
+            window.location.href = "en/";
+        }else{
+            window.location.href = "es/";
+        }
+    }
+
+// Cargar preferencias al cargar la página
+document.addEventListener('DOMContentLoaded', loadPreferences);
+</script>

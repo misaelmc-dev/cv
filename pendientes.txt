@@ -1,0 +1,2 @@
+orden de graficas en modelo tablet
+el menu se mueve en modelo tablet
