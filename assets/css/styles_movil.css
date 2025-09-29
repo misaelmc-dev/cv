@@ -1,11 +1,13 @@
 :root {
   --bg-color: #4ea0d6;
+  --body-color: #f0f2f5;
   --text-color: #333333;
   --card-bg: #f8f9fa;
   --border-color: #e0e0e0;
   --accent-color: #007bff;
   --shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.3);
   --them-color: #4dabf7;
+  --skeleton: #b9cde2;
 }
 
 [data-theme="dark"] {
@@ -26,7 +28,7 @@
 
 body {
   font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--bg-color) !important;
+  background-color: var(--body-color) !important;
   color: var(--text-color);
   transition: all 0.3s ease;
   line-height: 1.6;
@@ -75,6 +77,104 @@ body {
   background: var(--card-bg);
   color: var(--text-color);
   box-shadow: 0 0 0 0 #000;
+}
+
+
+.skeleton {
+  border-radius: 10px;  /* bordes redondeados opcionales */
+  background:linear-gradient(180deg, var(--skeleton), var(--skeleton));
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.skeleton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150px;
+  height: 100%;
+  width: 150px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer { 0% { left: -150px;} 100% { left: 100%; } }
+
+.skeleton-text-14-75 {
+  height: 40px !important;
+  width: 70% !important;
+  margin-top: 10px !important;
+  margin-bottom: 5px !important;
+  border-radius: 3px !important;
+}
+.skeleton-text-14-5 {
+  height: 30px !important;
+  width: 50% !important;
+  margin-bottom: 10px !important;
+  border-radius: 5px !important;
+}
+.skeleton-text-14 {
+  height: 30px !important;
+  width: 100% !important;
+  margin-bottom: 10px !important;
+  border-radius: 3px !important;
+}
+.skeleton-text-12-5 {
+  height: 20px !important;
+  width: 50% !important;
+  margin-bottom: 8px !important;
+  border-radius: 3px !important;
+}
+.skeleton-text-12 {
+  height: 20px !important;
+  width: 100% !important;
+  margin-bottom: 8px !important;
+  border-radius: 3px !important;
+}
+.skeleton-text-10 {
+  height: 15px !important;
+  width: 100% !important;
+  margin-bottom: 4px !important;
+  border-radius: 3px !important;
+  min-width: 60px !important;
+}
+.skeleton-text-8 {
+  height: 15px !important;
+  width: 100% !important;
+  margin-bottom: 3px !important;
+  border-radius: 3px !important;
+}
+.skeleton-h3 {
+  height: 30px !important;
+  width: 80% !important;
+  margin: 10px !important;
+  border-radius: 3px !important;
+}
+.skeleton-carousel {
+  border-radius: 0px !important;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  max-height: 100% !important;
+  min-height: 60% !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+.skeleton-card {
+  border-radius: 0px !important;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  margin: 20px;
+  margin-bottom: 0px;
+  max-height: 100% !important;
+  min-height: 60% !important;
+  height: 190px !important;
+  width: 85% !important;
+}
+
+.loader {
+  display: none;
 }
 
 .portada {
