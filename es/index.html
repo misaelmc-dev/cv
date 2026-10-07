@@ -9,10 +9,10 @@
     <title>Ing. Misael Manjarrez Careaga</title><!-- Título de la página -->
     <meta name="description" content="curriculum Vitae del ingeniero Misael Manjarrez Careaga desarrollador jr con portafolio profesional">
     <!-- Descripción de la página para SEO -->
-    <meta name="keywords" content="Misael, Manjarrez, Careaga, curriculum, vitae, desarrollador, Fullstack jr">
+    <meta name="keywords" content="Misael, Manjarrez, Careaga, misael manjarrez, misael manjarrez careaga, curriculum, vitae, desarrollador, Fullstack jr">
     <!-- Palabras clave para SEO -->
     <meta name="author" content="Misael Manjarrez"><!-- Autor de la página -->
-    <meta name="robots" content="Desarrollador jr, MisaelMC">
+    <meta name="robots" content="Desarrollador Fullstack, desarrollador Frontend, MisaelMC">
     <!-- Permite a los motores de búsqueda indexar la página -->
     <meta name="googlebot" content="Desarrollador jr, MisaelMC"><!-- Permite a Google indexar la página -->
     <meta name="theme-color" content="#ffffff"><!-- Color de la barra de direcciones en dispositivos móviles (Chrome, Edge, Opera, Android) -->
@@ -105,7 +105,7 @@
                     </div>
                     <div class="contact-item row">
                         <i class="fas fa-map-marker-alt col-3"></i>
-                        <a class="col-9">
+                        <a class="col-9" href="https://www.google.com/maps/place/Metepec,+State+of+Mexico/@19.2619479,-99.6158286,13z/data=!4m6!3m5!1s0x85cd8bae683c2073:0x94983f4fa1cfaa56!8m2!3d19.2528864!4d-99.598551!16zL20vMGdndGoz?entry=ttu&g_ep=EgoyMDI1MDkzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                             <div class="skeleton skeleton-text-8 col-9"></div>
                             <span class="loader">Metepec, Estado de México, México</span>
                         </a>
@@ -147,6 +147,7 @@
                             <div class="skeleton skeleton-text-10"></div>
                             <p class="profile-title loader" id="profile-title">Ingeniero en TIC's <br> Desarrollador Web Fullstack</p>
                             <div class="skeleton skeleton-text-14-75"></div>
+                            <br>
                             <a class="btn-cv loader" href="../assets/media/docs/CV_Misael_Manjarrez_Careaga.docx" download>Descargar CV &nbsp; <i class="fa fa-file"></i> </a>
                         </div>
                     </div>
@@ -184,7 +185,7 @@
                                     </div>
                                     <div class="contact-item row">
                                         <i class="fas fa-map-marker-alt col-3"></i>
-                                        <a class="col-9 lines">
+                                        <a class="col-9 lines" href="https://www.google.com/maps/place/Metepec,+State+of+Mexico/@19.2619479,-99.6158286,13z/data=!4m6!3m5!1s0x85cd8bae683c2073:0x94983f4fa1cfaa56!8m2!3d19.2528864!4d-99.598551!16zL20vMGdndGoz?entry=ttu&g_ep=EgoyMDI1MDkzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                                             <div class="skeleton skeleton-text-8"></div>
                                             <div class="skeleton skeleton-text-8"></div>
                                             <span class="loader">Metepec, Estado de México, México</span>
@@ -290,7 +291,7 @@
                         <div class="contact-info">
                             <div class="contact-item row">
                                 <i class="fas fa-map-marker-alt col-2"></i>
-                                <a class="col-10 line">
+                                <a class="col-10 line" href="https://www.google.com/maps/place/Metepec,+State+of+Mexico/@19.2619479,-99.6158286,13z/data=!4m6!3m5!1s0x85cd8bae683c2073:0x94983f4fa1cfaa56!8m2!3d19.2528864!4d-99.598551!16zL20vMGdndGoz?entry=ttu&g_ep=EgoyMDI1MDkzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                                     <span>Metepec, Estado de México, México</span>
                                 </a>
                             </div>
@@ -420,7 +421,7 @@
                             </div>
                             <div class="col-4">
                                 <div class="row">
-                                    <div class="col-12" style="padding: 40px;">
+                                    <div class="col-12 mapGit">
                                         <div class="skeleton" style="height: 200px; width:150px;"></div>
                                         <img src="../assets/img/portfolio/git_3.png" alt="Proyectos Github de Misael Manjarrez" usemap="#mapaGit" class="img-fluid img-loader loader" style="height: 200px; width:150px;">
                                         <map name="mapaGit">
@@ -2403,18 +2404,15 @@
     document.documentElement.lang = 'es';
     localStorage.setItem('language', 'es');
 
-    function mostrarMainImages() {
+    function showMainImages() {
         // Selecciona todos los elementos con la clase "main-image"
         const skelletons = document.querySelectorAll('.skeleton');
-
         // Recorre cada uno y cambia el estilo display a "block"
         skelletons.forEach(el => {
             el.style.display = 'none';
         });
-
         // Selecciona todos los elementos con la clase "main-image"
         const elementos = document.querySelectorAll('.loader');
-
         // Recorre cada uno y cambia el estilo display a "block"
         elementos.forEach(el => {
             el.style.display = 'inline-block';
@@ -2452,8 +2450,8 @@
     // Ejemplo de uso:
     onAllMainImagesLoaded(() => {
         setTimeout(()=>{
-            mostrarMainImages();
-        }, 2000);        
+           showMainImages(); 
+        }, 1000);        
         console.log('Todas las imágenes principales han sido cargadas.');
     });
 

@@ -4,6 +4,7 @@
   --text-color: #333333;
   --card-bg: #f8f9fa;
   --border-color: #e0e0e0;
+  --border-div: 1px solid #bebebe;
   --accent-color: #007bff;
   --shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.3);
   --them-color: #4dabf7;
@@ -16,6 +17,7 @@
   --text-color: #ffffff;
   --card-bg: #2d2d2d;
   --border-color: #444444;
+  --border-div: 1px solid #444444;
   --accent-color: #4dabf7;
   --shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.5);
   --them-color: #2350e2dc;
@@ -81,7 +83,7 @@ body {
   background: var(--card-bg);
   color: var(--text-color);
   box-shadow: var(--shadow);
-
+  border: var(--border-div);
 }
 
 .skeleton {
@@ -266,6 +268,7 @@ body {
   margin-top: 0rem;
   border-radius: 10px;
   box-shadow: var(--shadow);
+  border: var(--border-div);
 }
 
 .header {
@@ -597,6 +600,13 @@ body {
 .carousel-control-next-icon,.carousel-control-prev-icon,.carousel-indicators{
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
+}
+
+.mapGit{
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
